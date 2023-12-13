@@ -1,4 +1,4 @@
-const { _saveQuestionAnswer } = require("./_DATA");
+const { _saveQuestionAnswer } = require("../util/_DATA");
 describe("_saveQuestionAnswer", () => {
   it("should return true for correct parameters", async () => {
     const response = await _saveQuestionAnswer({
@@ -7,7 +7,7 @@ describe("_saveQuestionAnswer", () => {
       answer: "optionTwo",
     });
 
-    expect(response).toBeTruthy();
+    expect(response).toBe(true);
   });
 
   it("should return error for false parameters", async () => {
