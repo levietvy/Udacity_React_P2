@@ -89,7 +89,7 @@ const NewPoll = ({ dispatch }) => {
       {isValid ? (
         <p></p>
       ) : (
-        <p data-testId="invalid">Please update your Option 1 & Option 2</p>
+        <p data-testid="invalid">Please update your Option 1 & Option 2</p>
       )}
     </div>
   );
